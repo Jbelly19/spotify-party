@@ -1,0 +1,27 @@
+{
+  "name": "spotify-party",
+  "version": "1.0.0",
+  "description": "Spotify shared queue app",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jbelly19/spotify-party.git"
+  },
+  "author": "Josh Belmont",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jbelly19/spotify-party/issues"
+  },
+  "homepage": "https://github.com/Jbelly19/spotify-party#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0"
+  }
+}
